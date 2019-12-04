@@ -1,4 +1,4 @@
-# adventofcode2019
+# adventofcode2019 - Python Solution
 
 - [day1-solution](day1.py) for https://adventofcode.com/2019/day/1
 - [day2-solution](day2.py) for https://adventofcode.com/2019/day/2
