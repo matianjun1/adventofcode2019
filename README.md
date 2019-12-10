@@ -9,3 +9,4 @@
 - [day7-solution](day7.py) for https://adventofcode.com/2019/day/7
 - [day8-solution](day8.py) for https://adventofcode.com/2019/day/8
 - [day9-solution](day9.py) for https://adventofcode.com/2019/day/9
+- [day10-solution](day10.py) for https://adventofcode.com/2019/day/10
