@@ -13,3 +13,4 @@
 - [day11-solution](day11.py) for [day11](https://adventofcode.com/2019/day/11)
 - < have a trip to FuZhou >
 - [day12-solution](day12.py) for [day12](https://adventofcode.com/2019/day/12)
+- [day13-solution](day13.py) for [day13](https://adventofcode.com/2019/day/13)
