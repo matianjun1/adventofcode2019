@@ -22,6 +22,6 @@
 - [day19-solution](day19.py) for [day19](https://adventofcode.com/2019/day/19)
 - [day20-solution](day20.py) for [day20](https://adventofcode.com/2019/day/20)
 - [day21-solution with all refer to answer](day21.py) for [day21](https://adventofcode.com/2019/day/21)
-- [day22-solution only part 1](day22.py) for [day22](https://adventofcode.com/2019/day/22)
+- [day22-solution with part2 refer to answer](day22.py) for [day22](https://adventofcode.com/2019/day/22)
 - [day23-solution](day23.py) for [day23](https://adventofcode.com/2019/day/23)
 - [day24-solution](day24.py) for [day24](https://adventofcode.com/2019/day/24)

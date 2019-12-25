@@ -120,18 +120,34 @@ for shuffle in shuffling:
 print("day22-1:", a.index(2019))
 
 
-# cards = 119315717514047
-# times = 101741582076661
-# index = 2020
-# for shuffle in reversed(shuffling):
-#     if shuffle == "deal into new stack":
-#         index = cards - 1 - index
-#     if shuffle.startswith("cut"):
-#         cut_num = int(shuffle.split()[-1])
-#         index += cut_num * times
-#         index %= cards
-#     if shuffle.startswith("deal with increment"):
-#         increment_num = int(shuffle.split()[-1])
-#         index = index * pow(increment_num, cards-2, cards) % cards
+cards = 119315717514047
+times = 101741582076661
+index = 2020
+a, b = 1, 0
+for shuffle in reversed(shuffling):
+    if shuffle == "deal into new stack":
+        a = -a
+        b = cards - b - 1
+    if shuffle.startswith("cut"):
+        cut_num = int(shuffle.split()[-1])
+        b = (b + cut_num) % cards
+    if shuffle.startswith("deal with increment"):
+        increment_num = int(shuffle.split()[-1])
+        z = pow(increment_num, cards - 2, cards)  # == modinv(n,L)
+        a = a * z % cards
+        b = b * z % cards
 
-# print(index)
+
+def polypow(a, b, m, n):
+    if m == 0:
+        return 1, 0
+    if m % 2 == 0:
+        return polypow(a * a % n, (a * b + b) % n, m // 2, n)
+    else:
+        c, d = polypow(a, b, m - 1, n)
+        return a * c % n, (a * d + b) % n
+
+
+a, b = polypow(a, b, times, cards)
+
+print("day22-2:", (index * a + b) % cards)
