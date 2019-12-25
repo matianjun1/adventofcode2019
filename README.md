@@ -26,3 +26,4 @@
 - [day22-solution with part2 refer to answer](day22.py) for [day22](https://adventofcode.com/2019/day/22)
 - [day23-solution](day23.py) for [day23](https://adventofcode.com/2019/day/23)
 - [day24-solution](day24.py) for [day24](https://adventofcode.com/2019/day/24)
+- [day25-solution](day25.py) for [day25](https://adventofcode.com/2019/day/25)
